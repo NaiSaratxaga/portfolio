@@ -20,3 +20,12 @@ ul {
   --md: 16px;
   --lg: 18px;
 }
+body {
+  background-color: var(--paradise-pink);
+}
+.menu-items {
+  color: var(--very-light-grey);
+}
+.hero-title {
+  color: var(--very-light-grey);
+}
