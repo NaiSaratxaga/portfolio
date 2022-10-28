@@ -16,6 +16,12 @@
   src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
 
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('ttf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +35,8 @@
   --font-size-medium-1: 3.6rem;
   --font-size-large: 5.5rem;
   --font-size-huge: 7.5rem;
-  --font-stack: 'Hk Grotesk', sans-serif;
-
+  /* --font-stack: 'Hk Grotesk', sans-serif; */
+  --font-stack: 'Quicksand', sans-serif;
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
 
@@ -121,7 +127,7 @@ img {
 h1,
 h2,
 h3 {
-  font-family: 'Jost', sans-serif;
+  font-family: var(--font-stack);
   font-weight: 400;
   line-height: var(--line-height-small);
   color: var(--white);
@@ -403,8 +409,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url('./images/header.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -505,32 +510,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-  display: flex;
-  justify-content: space-between;
-  filter: invert(100%) grayscale(100%) opacity(0.8);
-}
-
-.client__logo {
-  height: 6.5rem;
-  max-width: 18rem;
-}
-
-@media (max-width: 1240px) {
-  .client__logos {
-    overflow-x: scroll;
-    padding: var(--gutter-normal);
-  }
-
-  .client__logo:not(:last-of-type) {
-    margin-right: var(--gutter-medium);
-  }
-}
-
-/* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
 
@@ -597,12 +576,6 @@ body:not(.user-is-tabbing) a:focus {
 .footer__github-buttons {
   display: flex;
   justify-content: center;
-}
-
-.footer__github-buttons iframe {
-  height: 2.5rem;
-  width: 84px;
-  transform: translateY(3px);
 }
 
 @media (max-width: 500px) {
