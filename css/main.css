@@ -41,7 +41,7 @@
   --line-height-small: 1.2;
 
   --black: #000;
-  --pink: #ff3258;
+  --pink: rgb(255, 50, 88);
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
 
@@ -77,7 +77,6 @@ body {
   font-weight: 400;
   color: var(----black);
   line-height: var(--line-height-normal);
-
   overflow-x: hidden;
 }
 
@@ -124,7 +123,13 @@ img {
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
 
-h1,
+h1 {
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: var(--line-height-small);
+  color: var(--white);
+}
+
 h2,
 h3 {
   font-family: var(--font-stack);
@@ -414,6 +419,8 @@ body:not(.user-is-tabbing) a:focus {
   background-position: center;
   background-attachment: fixed;
   font-size: var(--font-size-normal);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .header__text {
