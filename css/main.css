@@ -56,7 +56,7 @@
   --gutter-small-1: 2.5rem;
   --gutter-small: 2rem;
 
-  --border-light: 1px solid rgb(36, 35, 35);
+  --border-light: 1px solid var(--white-1);
 }
 
 html {
@@ -550,11 +550,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
-
-.contact__info {
-  max-width: var(--container-medium-width);
+.img-contact {
 }
-
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
