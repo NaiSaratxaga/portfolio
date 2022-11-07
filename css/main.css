@@ -535,7 +535,10 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
   margin-bottom: var(--gutter-normal);
 }
-
+.about__photo {
+  width: 400px;
+  height: 400px;
+}
 @media (min-width: 901px) {
   .about__text {
     flex: 0 0 35%;
@@ -550,7 +553,38 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
+.contact__content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 
+@media (max-width: 900px) {
+  .contact__content {
+    flex-direction: column-reverse;
+    align-items: initial;
+  }
+}
+
+.contact__photo-container {
+  margin-bottom: var(--gutter-normal);
+}
+.contact__photo {
+  width: 300px;
+  height: 300px;
+  margin-left: 200px;
+}
+
+@media (min-width: 901px) {
+  .contact__text {
+    flex: 0 0 35%;
+  }
+
+  .contact__photo-container {
+    flex: 1;
+    margin: 0 var(--gutter-huge) 0 0;
+  }
+}
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
